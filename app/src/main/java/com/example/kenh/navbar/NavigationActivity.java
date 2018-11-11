@@ -46,21 +46,36 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         {
 
             case R.id.nav_account:
+                //getActionBar().setTitle("Account settings");
+                getSupportActionBar().setTitle("Account settings");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new AccountFragment()).commit();
                 break;
 
+            case R.id.nav_chat:
+                //getActionBar().setTitle("Chat");
+                getSupportActionBar().setTitle("Chat");
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ChatFragment()).commit();
+                break;
+
             case R.id.nav_evaluation:
+                //getActionBar().setTitle("Behavior evaluation");
+                getSupportActionBar().setTitle("Behavior evaluation");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new EvaluationFragment()).commit();
                 break;
 
             case R.id.nav_rewards:
+                //getActionBar().setTitle("Rewards");
+                getSupportActionBar().setTitle("Rewards");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new RewardsFragment()).commit();
                 break;
 
             case R.id.nav_settings:
+                //getActionBar().setTitle("Settings");
+                getSupportActionBar().setTitle("Settings");
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new SettingFragment()).commit();
                 break;
